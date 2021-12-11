@@ -34,15 +34,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
 
 // rutas con permisos
 
 Route::middleware('role:administrador|vendedor')->group(function(){
 
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+    return view('dashboard');
+})->name('dashboard');
 
 Route::resource('usuarios', UserController::class );
     
