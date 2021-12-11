@@ -36,16 +36,15 @@
 <form action="{{route('login')}}" method="post">
     @csrf
 
-{{-- <div class="form-group">
-    
-<label>Rol:</label>
+<div class="form-group">
+
   <select class="form-control form-control-lg" name="name">
-    <option value="1"></option>
+    <option value="{{'role->name'}}">Rol </option>
     <option value="{{'role->name'}}">Administrador</option>
     <option value="{{'role->name'}}">vendedor</option>
     <option value="{{'role->name'}}">cliente</option>
   </select>
-</div> --}}
+</div>
 
 <div class="form-group">
 <input name="email" class="form-control form-control-lg" id="username" type="text" placeholder="Username" autocomplete="off">

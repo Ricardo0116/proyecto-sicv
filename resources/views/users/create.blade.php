@@ -23,12 +23,12 @@
 
 <div class="form-group">
     
-<label>Rol:</label>
+<div class="form-group">
   <select class="form-control form-control-lg" name="name">
-    <option value="">Rol</option>
-    <option value="">Administrador</option>
-    <option value="">vendedor</option>
-    <option value="">cliente</option>
+    <option >Rol</option>
+    <option >Administrador</option>
+    <option >Vendedor</option>
+    <option >Cliente</option>
   </select>
 </div>
 
@@ -40,23 +40,14 @@
 </div>
 
 <div class="form-group">
-    <div class="row">
-      <div class="col-3 text-center">
-        
-<label class="mt-2">Rol:</label>
-      </div>
-
-      <div class="col-9">
+      
   <select class="form-control form-control-lg" name="genero">
     <option >Genero</option>
     <option >Masculino</option>
     <option >Femenino</option>
     <option >otro</option>
   </select>
-        
-      </div>
       
-    </div>
 </div>
 
 {{-- <div class="form-group">
