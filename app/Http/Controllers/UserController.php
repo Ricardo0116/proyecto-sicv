@@ -48,7 +48,7 @@ class UserController extends Controller
             'password' => Hash::make($request->input('password')),
         ]);  
 
-        $usuarios->asignRole('administrador');
+        // $usuarios->asignRole('administrador');
         return redirect('usuarios')->with('crear', 'EL USUARIO HA SIDO REGISTRADO CORRECTAMENTE');
     }
 
