@@ -10,7 +10,7 @@
 <div class="collapse navbar-collapse " id="navbarSupportedContent">
 <ul class="navbar-nav ml-auto navbar-right-top">
 <li class="nav-item">
-<div id="custom-search" class="top-search-bar">
+<div id="usuarios" class="top-search-bar">
 <input class="form-control" type="text" placeholder="Search..">
 </div>
 </li>

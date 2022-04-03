@@ -63,14 +63,14 @@
 	<form action="" method="">
 		@method('DELETE')	
 		<button type="submit" class="" href="">
-			eliminar
+			<img src="{{url('img/delete.png')}}" alt="">
 		</button>
 		
 		<a class=""a href="">
-			actualizar
+			<img src="{{url('img/actualizado.png')}}" alt="">
 		</a>
 		<a class="" href="">
-			detalles
+			<img src="{{url('img/detalles.png')}}" alt="">
 		</a>
 	</form>
 </td>

@@ -23,7 +23,7 @@
 
 <div class="form-group">
     
-{{-- <div class="form-group">
+<div class="form-group">
   <select class="form-control form-control-lg" name="name">
     <option >Rol</option>
     <option >Administrador</option>
@@ -31,7 +31,7 @@
     <option >Cliente</option>
   </select>
 </div>
- --}}
+
 <div class="form-group">
 <input class="form-control form-control-lg" type="text" name="nombres" required="" placeholder="Nombres" autocomplete="off">
 </div>
@@ -60,7 +60,7 @@
 <input class="form-control form-control-lg" type="text" name="direccion" required="" placeholder="Direccion" autocomplete="off">
 </div>
 <div class="form-group">
-<input class="form-control form-control-lg" type="text" name="email" required="" placeholder="Email" autocomplete="off">
+<input class="form-control form-control-lg" type="text" name="email" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{2,5}" required="" placeholder="Email" autocomplete="off">
 </div>
 
 <div class="form-group">

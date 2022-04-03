@@ -1,4 +1,10 @@
 @extends('layouts.app')
+
+@section('css')
+<link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+@endsection()
+
+
 @section('content')
 
 <div class="row">
@@ -41,7 +47,7 @@
 
 <div class="card-body">
 <div class="table-responsive">
-<table class="table table-striped table-bordered first">
+<table id="usuarios" class="table table-striped table-bordered first">
 <thead>
 <tr class="text-center">
 {{-- <th>ROL</th> --}}
@@ -89,6 +95,19 @@
 </tbody>
 
 </table>
+
+@section('js')
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+@endsection()
+
+<script>
+	$(document).ready(function() {
+    $('#usuarios').DataTable();
+} );
+</script>
+
 </div>
 </div>
 </div>

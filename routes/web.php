@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
-// use App\Http\Controllers\OrderController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,7 +48,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::resource('usuarios', UserController::class );
 Route::resource('productos', ProductController::class);
-// Route::get('pedidos', [OrderController::class, 'index'])->name('orders.index');
+Route::resource('pedidos', OrderController::class);
     
     });
 
