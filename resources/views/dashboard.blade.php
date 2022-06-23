@@ -8,10 +8,10 @@
 </div>
 </div>
 </div>
-<div>
-	<img src="{{url('img/fondo-admin.jpg')}}" alt="">
+<div class="admin-img">
+	<img src="{{url('img/welcome.jpg')}}" alt="">
 	<div class="admin ">
-		<h1 class="display-4">Bienvenido Administrador</h1>
+		{{-- <h1 class="display-4">Bienvenido Administrador</h1> --}}
 	</div>
 </div>
 @endsection()
