@@ -30,8 +30,8 @@
     <option >Vendedor</option>
     <option >Cliente</option>
   </select>
-</div> --}}
-
+</div>
+ --}}
 <div class="form-group">
 <input class="form-control form-control-lg" type="text" name="nombres" required="" placeholder="Nombres" autocomplete="off">
 </div>
