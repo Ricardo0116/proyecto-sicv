@@ -31,7 +31,7 @@
 
 <div class="splash-container">
 <div class="card ">
-<div class="card-header text-center"><a href="../index.html"><img class="logo-img" src="{{url('img/logo1.png')}}" alt="logo"></a></div>
+<div class="card-header text-center"><a href="index"><img class="logo-img" src="{{url('img/logo1.png')}}" alt="logo"></a></div>
 <div class="card-body">
 <form action="{{route('login')}}" method="post">
     @csrf
@@ -54,9 +54,9 @@
 <input name="password" class="form-control form-control-lg" id="password" type="password" placeholder="Password">
 </div>
 <div class="form-group">
-<label class="custom-control custom-checkbox">
+{{-- <label class="custom-control custom-checkbox">
 <input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
-</label>
+</label> --}}
 </div>
 <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
 
