@@ -24,7 +24,12 @@
 <div class="form-group">
 
 <div class="form-group">
-<input class="form-control form-control-lg" type="text" name="nombre" required="" placeholder="Nombre" autocomplete="off">
+  <select class="form-control form-control-lg" name="name">
+    <option >Seleccione Producto</option>
+    <option >Arequipe</option>
+    <option >Yogurt</option>
+    <option >Manjar Blanco</option>
+  </select>
 </div>
 <div class="form-group">
 <input class="form-control form-control-lg" type="text" name="gramos" required="" placeholder="Gramos" autocomplete="off">

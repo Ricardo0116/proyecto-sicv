@@ -23,14 +23,14 @@
 
 <div class="form-group">
     
-<div class="form-group">
+{{-- <div class="form-group">
   <select class="form-control form-control-lg" name="name">
     <option >Rol</option>
     <option >Administrador</option>
     <option >Vendedor</option>
     <option >Cliente</option>
   </select>
-</div>
+</div> --}}
 
 <div class="form-group">
 <input class="form-control form-control-lg" type="text" name="nombres" required="" placeholder="Nombres" autocomplete="off">
