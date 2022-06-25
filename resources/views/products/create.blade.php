@@ -38,10 +38,10 @@
 <div class="form-group">
 <input class="form-control form-control-lg" required="" type="text" name="precio" placeholder="Precio">
 </div>
-
+{{-- 
 <div class="form-group">
 <input class="form-control form-control-lg" required="" type="text" name="idvendedores" placeholder="Id vendedores">
-</div>
+</div> --}}
 
 
 <div class="form-group pt-2">
