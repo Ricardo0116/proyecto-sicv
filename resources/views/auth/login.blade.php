@@ -35,8 +35,8 @@
 <div class="card-body">
 <form action="{{route('login')}}" method="post">
     @csrf
-{{-- 
-<div class="form-group">
+
+{{-- <div class="form-group">
 
   <select class="form-control form-control-lg" name="name">
     <option value="1"></option>
@@ -53,11 +53,7 @@
 <div class="form-group">
 <input name="password" class="form-control form-control-lg" id="password" type="password" placeholder="Password">
 </div>
-<div class="form-group">
-{{-- <label class="custom-control custom-checkbox">
-<input class="custom-control-input" type="checkbox"><span class="custom-control-label">Remember Me</span>
-</label> --}}
-</div>
+
 <button type="submit" class="btn btn-primary btn-lg btn-block">Sign in</button>
 
 <a href="{{url('inicio')}}" class="btn btn-danger btn-lg btn-block">volver</a>
