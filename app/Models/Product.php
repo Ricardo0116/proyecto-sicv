@@ -15,6 +15,5 @@ class Product extends Model
         'nombre',
         'gramos',
         'precio',
-        'idvendedores',
     ];
 }
