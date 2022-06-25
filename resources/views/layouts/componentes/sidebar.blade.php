@@ -21,7 +21,7 @@ Menú Admin
 <li class="nav-item">
 <a class="nav-link" href="{{url('productos')}}" data-toggle="" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-dolly-flatbed"></i>Productos</a>
 </li>
-<li class="nav-item">
+{{-- <li class="nav-item">
 <a class="nav-link" href="{{url('pedidos')}}" data-toggle="" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-folder-open"></i>Pedidos</a>
 </li>
 <li class="nav-item">
@@ -29,7 +29,7 @@ Menú Admin
 </li>
 <li class="nav-item">
 <a class="nav-link" href="{{url('usuarios')}}" data-toggle="" aria-expanded="false" data-target="#submenu-2" aria-controls="submenu-2"><i class="fas fa-chart-line"></i>Ingresos</a>
-</li>
+</li> --}}
 
 
 
