@@ -46,27 +46,27 @@ Route::get('dashboard', function(){
 
 
 
-Route::resource('usuarios', UserController::class);
+// Route::resource('usuarios', UserController::class);
 
-Route::resource('usuarios', UserController::class);
-    Route::resource('productos', ProductController::class);
-    Route::resource('pedidos', OrderController::class);
+// Route::resource('usuarios', UserController::class);
+//     Route::resource('productos', ProductController::class);
+//     Route::resource('pedidos', OrderController::class);
 
 // rutas con permisos
 
-    // Route::middleware('role:administrador|vendedor|cliente')->group(function(){
+    Route::middleware('role:administrador|vendedor|cliente')->group(function(){
 
 
-    // Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    //     return view('dashboard');
-    // });
+    Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+        return view('dashboard');
+    });
 
-    // Route::resource('usuarios', UserController::class );
-    // Route::resource('productos', ProductController::class);
-    // Route::resource('pedidos', OrderController::class);
-    // Route::resource('update-profile', RolUserController::class);
+    Route::resource('usuarios', UserController::class );
+    Route::resource('productos', ProductController::class);
+    Route::resource('pedidos', OrderController::class);
+    Route::resource('update-profile', RolUserController::class);
         
-    //     });
+        });
 
 
 
