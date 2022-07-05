@@ -51,6 +51,8 @@ Route::resource('usuarios', UserController::class);
 // Route::resource('usuarios', UserController::class);
     Route::resource('productos', ProductController::class);
     Route::resource('pedidos', OrderController::class);
+    Route::resource('update-profile', RolUserController::class);
+    
 
 // rutas con permisos
 
