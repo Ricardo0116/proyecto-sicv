@@ -79,14 +79,14 @@
 	<form action="{{route('usuarios.destroy', $usuario->id)}}" method="POST">
 		@csrf
 		@method('DELETE')	
-		@role('administrador')
+		
 			
 		<button type="submit" class="outline-none mr-2" href="">
 		
 			<img src="{{url('img/delete.png')}}" alt="">
 		
 		</button>
-		@endrole()
+		
 		<a class="mr-2"a href="{{route('usuarios.edit', $usuario->id)}}">
 			<img src="{{url('img/actualizado.png')}}" alt="">
 		</a>
