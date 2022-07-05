@@ -121,8 +121,7 @@
 <a class="dropdown-item" href="#"><i class="fas fa-cog mr-2"></i>cambiar contraseña</a>
 <form action="{{route('logout')}}" method="post">
     @csrf   
-    <button class="dropdown-item"><i class="fas fa-power-off mr-2"></i>
-        <a href="">Salir</a>
+    <button class="dropdown-item"><i class="fas fa-power-off mr-2"></i>salir
     </button>
 </form>
 </div>
