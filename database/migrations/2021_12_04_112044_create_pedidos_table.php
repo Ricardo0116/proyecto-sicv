@@ -17,8 +17,10 @@ class CreatePedidosTable extends Migration
             $table->id('idpedidos');
             $table->string('cant_productos');
 
-            $table->bigInteger('idclientes')->unsigned();
-            $table->foreign('idclientes')->references('idclientes')->on('clientes');
+            // $table->bigInteger('id')->unsigned();
+            // $table->foreign('id')->references('id')->on('users');
+
+            
             
             $table->timestamps();
         });

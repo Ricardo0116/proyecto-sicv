@@ -10,3 +10,8 @@
 	width: 1040px;
 	height: 620px;
 }
+
+
+img .eliminar{
+	cursor: pointer;
+}

@@ -26,7 +26,7 @@ class User extends Authenticatable
      * @var string[]
      */
     protected $fillable = [
-        'nombres',
+        'name',
         'apellidos',
         'genero',
         'barrio',
@@ -34,15 +34,6 @@ class User extends Authenticatable
         'email',
         'password',
     ];
-
-    public function setPasswordAttribute($password){
-        $this -> attributes ['password'] = bcrypt($password);
-    }
-
-
-    // public function nombry(){
-    //     return $this->belongsTo('App\Models\Role', 'name');
-    // }
 
     /**
      * The attributes that should be hidden for serialization.

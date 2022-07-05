@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\RolUserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,25 +33,40 @@ Route::get('contactos', function () {
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+
+
+
+// Route::get('dashboard', function(){
+//     return view('dashboard');
+// });
+
+
+
+// Route::resource('usuarios', UserController::class);
+
+// Route::resource('usuarios', UserController::class);
+//     Route::resource('productos', ProductController::class);
+//     Route::resource('pedidos', OrderController::class);
 
 // rutas con permisos
 
-Route::middleware('role:administrador|vendedor')->group(function(){
+    Route::middleware('role:administrador|vendedor|cliente')->group(function(){
 
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
-})->name('dashboard');
-
-Route::resource('usuarios', UserController::class );
-Route::resource('productos', ProductController::class);
-Route::resource('pedidos', OrderController::class);
-    
+    Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
+        return view('dashboard');
     });
+
+    Route::resource('usuarios', UserController::class );
+    Route::resource('productos', ProductController::class);
+    Route::resource('pedidos', OrderController::class);
+    Route::resource('update-profile', RolUserController::class);
+        
+        });
 
 
 

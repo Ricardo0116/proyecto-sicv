@@ -45,6 +45,7 @@
 <thead>
 <tr class="text-center">
 {{-- <th>ROL</th> --}}
+{{-- <th>identificador</th> --}}
 <th>NOMBRE</th>
 <th>GRAMOS</th>
 <th>PRECIO</th>
@@ -55,10 +56,13 @@
 </thead>
 <tbody>
 
+@foreach($productos as $producto)
+
 <tr class="text-center">
-<td>arequipe</td>
-<td>500</td>
-<td>5000</td>	
+{{-- <td>{{ $producto->userproduct->name}}</td> --}}
+<td>{{ $producto->nombre }}</td>
+<td>{{ $producto->gramos }}</td>	
+<td>{{ $producto->precio }}</td>	
 <td class="text-center">
 	<form action="" method="">
 		@method('DELETE')	
@@ -75,6 +79,7 @@
 	</form>
 </td>
 </tr>
+@endforeach()
 </tbody>
 
 </table>

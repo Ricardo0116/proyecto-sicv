@@ -24,20 +24,43 @@
 <div class="form-group">
 
 <div class="form-group">
-  <select class="form-control form-control-lg" name="name">
-    <option >Seleccione Producto</option>
+<input class="form-control form-control-lg" type="text" name="idusuario" required="" placeholder="id empleado" autocomplete="off">
+</div>
+
+
+<div class="form-group">
+      
+  <select class="form-control form-control-lg" name="nombre">
+    <option >Producto</option>
     <option >Arequipe</option>
     <option >Yogurt</option>
     <option >Manjar Blanco</option>
   </select>
-</div>
-<div class="form-group">
-<input class="form-control form-control-lg" type="text" name="gramos" required="" placeholder="Gramos" autocomplete="off">
+      
 </div>
 
 <div class="form-group">
-<input class="form-control form-control-lg" required="" type="text" name="precio" placeholder="Precio">
+      
+  <select class="form-control form-control-lg" name="gramos">
+    <option >Gramos</option>
+    <option >250</option>
+    <option >500</option>
+    <option >1000</option>
+  </select>
+      
 </div>
+
+<div class="form-group">
+      
+  <select class="form-control form-control-lg" name="precio">
+    <option >Precios</option>
+    <option >$ 2500</option>
+    <option >$ 5000</option>
+    <option >$ 8000</option>
+  </select>
+      
+</div>
+
 {{-- 
 <div class="form-group">
 <input class="form-control form-control-lg" required="" type="text" name="idvendedores" placeholder="Id vendedores">

@@ -15,7 +15,7 @@
 </div>
 <div class="card-body">
 <div class="form-group">
-    <label class="form-control form-control-lg">Nombres: {{$usuarios->nombres}}</label>
+    <label class="form-control form-control-lg">Nombres: {{$usuarios->name}}</label>
 </div>
 <div class="form-group">
     <label class="form-control form-control-lg">Apellidos: {{$usuarios->apellidos}}</label>

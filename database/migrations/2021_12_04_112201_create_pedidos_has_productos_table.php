@@ -14,12 +14,12 @@ class CreatePedidosHasProductosTable extends Migration
     public function up()
     {
         Schema::create('pedidos_has_productos', function (Blueprint $table) {
-            // $table->id();
-            $table->bigInteger('pedidos_idpedidos')->unsigned();
-            $table->foreign('pedidos_idpedidos')->references('idpedidos')->on('pedidos');
+            $table->id();
+            // $table->bigInteger('pedidos_idpedidos')->unsigned();
+            // $table->foreign('pedidos_idpedidos')->references('idpedidos')->on('pedidos');
 
-            $table->bigInteger('productos_idproductos')->unsigned();
-            $table->foreign('productos_idproductos')->references('idproductos')->on('productos');
+            // $table->bigInteger('productos_idproductos')->unsigned();
+            // $table->foreign('productos_idproductos')->references('idproductos')->on('productos');
             $table->timestamps();
         });
     }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+Use App\Models\RolUser;
 use Illuminate\Support\Facades\Hash;
 
 class UserController extends Controller
@@ -39,13 +40,27 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $usuarios = User::create([
-            'nombres' => $request->input('nombres'),
+            // 'idroles' => $request->input('idroles'),
+            // 'idroles' => $request->input('id'),
+            'name' => $request->input('name'),
+            // 'id' => $usuarios->asignRole('administrador'),
             'apellidos' => $request->input('apellidos'),
             'genero' => $request->input('genero'),
             'barrio' => $request->input('barrio'),
             'direccion' => $request->input('direccion'),
             'email' => $request->input('email'),
             'password' => Hash::make($request->input('password')),
+
+        // $usuarios = User::create([
+        // $usuarios->name = $request->input('nombre');
+        // $usuarios->apellidos = $request->input('cedula');
+        // $usuarios->genero = $request->input('telefono');
+        // $usuarios->barrio = $request->input('email');
+        // $usuarios->direccion = $request->input('email');
+        // $usuarios->email = $request->input('email');
+        // // $usuarios->password = Hash::make($request->input('cedula'));
+        // $usuarios->assignRole($request->input('roles'));
+
         ]);  
 
         // $usuarios->asignRole('administrador');

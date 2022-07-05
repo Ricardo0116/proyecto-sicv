@@ -12,8 +12,14 @@ class Product extends Model
     protected $table = 'productos';
     protected $primaryKey = 'idproductos';
     protected $fillable = [
+
+        'idusuario',
         'nombre',
         'gramos',
         'precio',
     ];
+    public function userproduct(){
+        return $this->belongsTo('App\Models\User', 'id');
+    }
+
 }

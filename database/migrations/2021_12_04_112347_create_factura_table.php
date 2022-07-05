@@ -19,8 +19,8 @@ class CreateFacturaTable extends Migration
             $table->time('hora');
             $table->date('fecha');
 
-            $table->bigInteger('idpedidos')->unsigned();
-            $table->foreign('idpedidos')->references('idpedidos')->on('pedidos');
+            // $table->bigInteger('idpedidos')->unsigned();
+            // $table->foreign('idpedidos')->references('idpedidos')->on('pedidos');
             $table->timestamps();
         });
     }

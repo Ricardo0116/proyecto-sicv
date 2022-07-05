@@ -20,10 +20,10 @@
 <div class="dashboard-main-wrapper">
 
 <div class="dashboard-header">
-@include('layouts.componentes.navbar')
+@include('layouts.components.navbar')
 </div>
 
-@include('layouts.componentes.sidebar')
+@include('layouts.components.sidebar')
 
 <div class="dashboard-wrapper">
 <div class="dashboard-ecommerce">
@@ -40,7 +40,7 @@
 
 
 
-@include('layouts.componentes.footer')
+@include('layouts.components.footer')
 
 
 
@@ -54,12 +54,12 @@
 
 <script src="{{url('js/app.js')}}"></script>
 
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-23581568-13');
 </script>
 <script defer src="https://static.cloudflareinsights.com/beacon.min.js/v64f9daad31f64f81be21cbef6184a5e31634941392597" integrity="sha512-gV/bogrUTVP2N3IzTDKzgP0Js1gg4fbwtYB6ftgLbKQu/V8yH2+lrKCfKHelh4SO3DPzKj4/glTO+tNJGDnb0A==" data-cf-beacon='{"rayId":"6b6df4434ba53ee1","token":"cd0b4b3a733644fc843ef0b185f98241","version":"2021.11.0","si":100}' crossorigin="anonymous"></script>

@@ -36,25 +36,3 @@ mix.styles([
     'resources/template-concept/js/C3chartjs.js',
     'resources/template-concept/js/dashboard-ecommerce.js',
 ], 'public/js/app.js');
-
-
-mix.styles([
-    'resources/small/css/bootstrap.min.css',
-    'resources/small/css/themify-icons.css',
-    'resources/small/css/slick.css',
-    'resources/small/css/slick-theme.css',
-    'resources/small/css/jquery.fancybox.min.css',
-    'resources/small/css/aos.css',
-    'resources/small/css/style.css',
-
-    ], 'public/css/index.css' ).scripts([
-    'resources/small/js/jquery.min.js',
-    'resources/small/js/bootstrap.min.js',
-    'resources/small/js/slick.min.js',
-    'resources/small/js/jquery.fancybox.min.js',
-    'resources/small/js/jquery.syotimer.min.js',
-    'resources/small/js/aos.js',
-    'resources/small/js/gmap.js',
-    'resources/small/js/script.js',
-    'resources/small/js/valid.js',
-    ], 'public/js/index.js');

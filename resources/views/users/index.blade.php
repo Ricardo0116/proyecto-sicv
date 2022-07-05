@@ -2,6 +2,7 @@
 
 @section('css')
 <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+<link rel="stylesheet" href="{{ url('css/css-alternos') }}">
 @endsection()
 
 
@@ -65,7 +66,8 @@
 @foreach($usuarios as $usuario)
 <tr>
 {{-- <td>{{$usuario->nombry->name}}</td> --}}
-<td>{{$usuario->nombres}}</td>
+<td>{{$usuario->name}}</td>
+{{-- <td>{{$usuario->roles}}</td> --}}
 <td>{{$usuario->apellidos}}</td>
 <td>{{$usuario->genero}}</td>
 <td>{{$usuario->barrio}}</td>
@@ -78,8 +80,11 @@
 		@csrf
 		@method('DELETE')	
 		@role('administrador')
-		<button type="submit" class="" href="">
+			
+		<button type="submit" class="outline-none mr-2" href="">
+		
 			<img src="{{url('img/delete.png')}}" alt="">
+		
 		</button>
 		@endrole()
 		<a class="mr-2"a href="{{route('usuarios.edit', $usuario->id)}}">
@@ -87,6 +92,9 @@
 		</a>
 		<a class="mr-2" href="{{route('usuarios.show', $usuario->id)}}">
 			<img src="{{url('img/detalles.png')}}" alt="">
+		</a>
+		<a class="mr-2" href="{{ route('update-profile.index') }}">
+			<img src="{{url('img/update-profile.png')}}" alt="">
 		</a>
 	</form>
 </td>

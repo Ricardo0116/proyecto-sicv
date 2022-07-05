@@ -27,10 +27,10 @@
 <input class="form-control form-control-lg" type="text" name="id" required="" placeholder="rol" autocomplete="off">
 </div> --}}
 
-{{-- <div class="form-group">
+<div class="form-group">
 <input class="form-control form-control-lg" type="text" name="idroles" required="" placeholder="idroles" autocomplete="off">
 </div>
- --}}
+
 
 
 <div class="form-group">

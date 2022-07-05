@@ -3,13 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Models\Product;
-use App\Models\User;
 Use App\Models\RolUser;
+use App\Models\User;
 
 
 
-class ProductController extends Controller
+class RolUserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,9 +17,9 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $productos = Product::simplePaginate(10);
-        return view ('products.index', compact('productos'));
-        return redirect ('productos');
+        $roluser = RolUser::simplePaginate(10);
+        return view ('updaterol.index', compact('roluser'));
+        // return redirect('update-profile');
     }
 
     /**
@@ -30,7 +29,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view ('products.create');
+        return view('updaterol.create');
     }
 
     /**
@@ -41,14 +40,16 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        $productos = Product::create([
-            'idusuario' => $request->input('idusuario'),
-            'nombre' => $request->input('nombre'),
-            'gramos' => $request->input('gramos'),
-            'precio' => $request->input('precio'),
-            
+        $roluser = RolUser::create([
+            'idrol' => $request->input('idrol'),
+            'idroles' => $request->input('idroles'),
+            'id' => $request->input('id'),
+
+        
         ]);
-        return redirect('productos');
+
+        
+        return redirect('update-profile');
     }
 
     /**
@@ -91,8 +92,9 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($idrol)
     {
-        //
+        $roluser = RolUser::find($idrol)->delete();
+        return redirect ('update-profile')->with('eliminar', 'SE ELMINO EL ROL ASIGNADO');
     }
 }
