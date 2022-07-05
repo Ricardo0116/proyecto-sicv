@@ -48,7 +48,7 @@ Route::get('dashboard', function(){
 
 Route::resource('usuarios', UserController::class);
 
-Route::resource('usuarios', UserController::class);
+// Route::resource('usuarios', UserController::class);
     Route::resource('productos', ProductController::class);
     Route::resource('pedidos', OrderController::class);
 
