@@ -64,15 +64,16 @@
 <td>{{ $producto->gramos }}</td>	
 <td>{{ $producto->precio }}</td>	
 <td class="text-center">
-	<form action="" method="">
-		@method('DELETE')	
-		<button type="submit" class="" href="">
+	<form action="{{ route('productos.destroy', $producto->idproductos) }}" method="POST">
+		@csrf
+		@method('DELETE')
+		{{-- <button type="submit" class="" href="">
 			<img src="{{url('img/delete.png')}}" alt="">
 		</button>
-		
-		<a class=""a href="">
+		 --}}
+		{{-- <a class=""a href="">
 			<img src="{{url('img/actualizado.png')}}" alt="">
-		</a>
+		</a> --}}
 		<a class="" href="">
 			<img src="{{url('img/detalles.png')}}" alt="">
 		</a>

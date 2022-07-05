@@ -44,6 +44,7 @@
 <div class="card">
   <div>   
     <a class="btn btn-success mt-3 ml-3" href="{{url('update-profile/create')}}">Asignar Rol a Usuario</a>
+    <a class="btn btn-danger mt-3 ml-3" href="{{url('usuarios')}}">Asignar Rol a Usuario</a>
   </div>
 {{-- <hr> --}}
 
@@ -96,9 +97,9 @@
     <a class="mr-2" href="">
       <img src="{{url('img/detalles.png')}}" alt="">
     </a>
-    <a class="mr-2" href="">
+    {{-- <a class="mr-2" href="">
       <img src="{{url('img/update-profile.png')}}" alt="">
-    </a>
+    </a> --}}
   </form>
 </td>
 </tr>

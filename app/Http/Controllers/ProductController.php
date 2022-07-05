@@ -91,8 +91,10 @@ class ProductController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($idproductos)
     {
-        //
+        $productos = User::find($idproductos)->delete();
+        return redirect('productos')->with('eliminar', 'SE HA ELIMINADO UN PRODUCTO');
+
     }
 }
